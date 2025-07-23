@@ -1,87 +1,83 @@
-# Welcome to React Router!
+# 🧠 Resumaid — AI-powered Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Build an AI-powered Resume Analyzer with React, React Router, and Puter.js! Create job listings, upload candidate resumes, and use AI to automatically evaluate and match resumes to job requirements. Deployed on Vercel for lightning-fast, global access.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+[🚀 Live Demo](https://resumaid-ten.vercel.app/)
 
-## Features
+---
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## ✨ Introduction
 
-## Getting Started
+Resumaid is a fully responsive AI-powered resume analyzer built using React, React Router, and Puter.js. It enables recruiters or hiring managers to post job listings, and candidates to upload resumes, which are then automatically analyzed and matched to job requirements using AI.
 
-### Installation
+You can:
+- Upload and store resumes
+- Analyze candidate suitability with AI
+- Get ATS-like scores and custom feedback
+- View smart match results per job
 
-Install the dependencies:
+---
+
+## ⚙️ Tech Stack
+
+- **React** — Component-based UI library
+- **React Router v7** — Modern routing with data APIs and code splitting
+- **Puter.js** — Serverless SDK with built-in auth, storage, and AI
+- **Tailwind CSS** — Utility-first CSS framework
+- **TypeScript** — Typed JavaScript for better tooling and safety
+- **Vite** — Lightning-fast build tool and dev server
+- **Zustand** — Minimal state management
+- **Vercel** — Hosting & deployment platform (used here instead of Puter hosting)
+
+---
+
+## 🔋 Features
+
+✅ **Client-side Authentication** — Auth with no backend using Puter.js  
+✅ **Resume Upload & Storage** — Save resumes securely in the cloud  
+✅ **AI Resume Evaluation** — Auto-match resumes to job listings with smart feedback  
+✅ **Clean UI & Modern Design** — Built with Tailwind
+✅ **Fully Responsive** — Works on mobile, tablet, and desktop  
+✅ **Type-safe Codebase** — Built with TypeScript for stability and scalability  
+✅ **Reusable Components** — Modular structure for rapid development  
+✅ **Fast Deployment** — Deployed on Vercel for global reach
+
+---
+
+## 🤸 Quick Start
+
+### 🔧 Prerequisites
+
+- Git
+- Node.js
+- npm
+
+### 📦 Installation
 
 ```bash
+git clone https://github.com/mohitbansal25082006/resumaid.git
+cd resumaid
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+### ▶️ Run Locally
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Open your browser and visit:  
+**http://localhost:5173**
 
-## Building for Production
+### 🚀 Deploy to Vercel
 
-Create a production build:
+To deploy:
 
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+1. Push your code to GitHub.
+2. Visit [vercel.com](https://vercel.com) and import your repo.
+3. Set:
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Install Command**: *(leave blank)*
+   - **Root Directory**: `./`
+4. Set `ssr: false` in `react-router.config.ts`
