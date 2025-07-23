@@ -3,8 +3,8 @@ export const resumes: Resume[] = [
         id: "1",
         companyName: "Google",
         jobTitle: "Frontend Developer",
-        imagePath: "E:\resumaid\public\images\resume_01.png",
-        resumePath: "E:\resumaid\public\images\resume_01.png",
+        imagePath: "/images/resume_01.png",
+        resumePath: "/resumes/resume-1.pdf",
         feedback: {
             overallScore: 85,
             ATS: {
